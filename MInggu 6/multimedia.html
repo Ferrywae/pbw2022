@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Biodata</a>
+        <a href="jadwal.html">Jadwal</a>
+        <a href="kontak.html">Contact</a>
+        <a href="form.html">Form</a>
+        <a href="multimedia.html">Multimedia</a>
+    </nav>
+    <hr>
+    <article>
+        <h2>Video dari YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N7iY-jNWeFc"></iframe>
+    </article>
+
+
+
+    <article>
+        <h2>Video dengan subtitle dan control Javascript</h2>
+        <video controls id="myVideo">
+            <source src="Foto/cat-herd.webm" type="video/webm">
+        </video>
+        <p>
+            <button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="durationVid()" type="button">Duration Video</button>
+            <button onclick="enableControls()" type="button">Enable controls</button>
+            <button onclick="disableControls()" type="button">Disable controls</button>
+            <button onclick="checkControls()" type="button">Check controls status</button>
+        </p>
+    </article>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2022 Ferry Sandya Nugroho</p>
+    </footer>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+            vid.loop = true;
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+        function durationVid() {
+            alert(vid.duration);
+        }
+        function enableControls() {
+            vid.controls = true;
+            vid.load();
+        }
+        function disableControls() {
+            vid.controls = false;
+            vid.load();
+        }
+        function checkControls() {
+            alert(vid.controls);
+        }
+    </script>
+</body>
+
+</html>
