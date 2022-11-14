@@ -1,4 +1,30 @@
 <!DOCTYPE html>
 <html>
-    
+ <head>
+
+ </head>
+ <body>
+    <article>
+        <h2>Video dari YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N7iY-jNWeFc"></iframe>
+    </article>
+
+
+
+    <article>
+        <h2>Video dengan subtitle dan control Javascript</h2>
+        <video controls id="myVideo">
+            <source src="media/cat-herd.webm" type="video/webm">
+            <track src="media/cat-herd-id.vtt" kind="subtitles" srclang="id" label="Indonesia">
+        </video>
+        <p>
+            <button onclick="playVid()" type="button">Play Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="durationVid()" type="button">Duration Video</button>
+            <button onclick="enableControls()" type="button">Enable controls</button>
+            <button onclick="disableControls()" type="button">Disable controls</button>
+            <button onclick="checkControls()" type="button">Check controls status</button>
+        </p>
+    </article> 
+ </body>   
 </html>
