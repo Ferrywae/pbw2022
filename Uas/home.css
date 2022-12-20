@@ -1,6 +1,6 @@
 body {
     background-color: #37343d;
-    background-image: image: url("../Foto/bandung.jpeg");
+    background-image: image: url(./bandung.jpeg);
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
     background-size: 1200px;

@@ -21,12 +21,12 @@ body{
 }
 
 .button:hover{
-    width: 50;
+    width: 50; q
     height: 50;
     font-size: 30;
     border: none;
     color: white;
-    cursor: pointer;
+    cursor: pointer; 
     background: #008087;
 }
 
